@@ -52,13 +52,13 @@ const portraits: Portrait[] = [
 
 const agenda = [
   { time: "6:00", meridiem: "PM", title: "Registration & reception", detail: "Welcome to Cipriani 42nd Street." },
-  { time: "6:30", meridiem: "PM", title: "Welcoming remarks", detail: "Master of Ceremonies, Dr. Trey Guinn." },
-  { time: "6:35", meridiem: "PM", title: "Keynote address", detail: "H.E. Sheikh Dr. Mohammed Alissa, Secretary General, Muslim World League." },
-  { time: "6:45", meridiem: "PM", title: "Special remarks", detail: "H.E. Miguel Ángel Moratinos, Under-Secretary-General and High Representative of the UN Alliance of Civilizations." },
+  { time: "6:30", meridiem: "PM", title: "Welcoming remarks", detail: "Master of Ceremonies, Dr. Trey Guinn.", photo: treyAsset.url, photoAlt: "Dr. Trey Guinn" },
+  { time: "6:35", meridiem: "PM", title: "Keynote address", detail: "H.E. Sheikh Dr. Mohammed Alissa, Secretary General, Muslim World League.", photo: alissaAsset.url, photoAlt: "H.E. Sheikh Dr. Mohammed Alissa" },
+  { time: "6:45", meridiem: "PM", title: "Special remarks", detail: "H.E. Miguel Ángel Moratinos, Under-Secretary-General and High Representative of the UN Alliance of Civilizations.", photo: moratinosAsset.url, photoAlt: "H.E. Miguel Ángel Moratinos" },
   { time: "6:55", meridiem: "PM", title: "Panel I · Faith and AI", detail: "Rabbi Yehuda Sarna, Dr. Jihad Turk and Father Davide Meli. Moderated by Andrew Sollinger, CEO and publisher of Foreign Policy magazine.", feature: true },
   { time: "7:25", meridiem: "PM", title: "Panel II · AI and Global Development", detail: "Amb. Roya Rahmani, Antón Leis García and Laura Herman. Moderated by Dr. Amra Sabic El-Rayess, Executive Director of the International Interfaith Research Lab at Teachers College, Columbia University.", feature: true },
   { time: "7:45", meridiem: "PM", title: "Short film", detail: "MWL global projects and AI initiative." },
-  { time: "8:00", meridiem: "PM", title: "Closing remarks", detail: "Ms. Malala Yousafzai, Nobel Peace Prize Laureate and education activist." },
+  { time: "8:00", meridiem: "PM", title: "Closing remarks", detail: "Ms. Malala Yousafzai, Nobel Peace Prize Laureate and education activist.", photo: malalaAsset.url, photoAlt: "Malala Yousafzai" },
   { time: "8:20", meridiem: "– 8:45 PM", title: "Networking reception", detail: "The evening concludes." },
 ];
 
