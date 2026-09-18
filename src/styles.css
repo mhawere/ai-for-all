@@ -205,7 +205,7 @@
 .section-heading h2 { margin: 0; font: 700 clamp(42px, 6vw, 76px)/.98 var(--font-display); }
 .section-heading > p { margin: 0; color: var(--muted-foreground); font-size: 16px; line-height: 1.5; }
 .timeline { max-width: 1120px; margin: 0 auto; }
-.timeline-row { display: grid; grid-template-columns: 110px 44px 1fr; gap: 28px; min-height: 142px; position: relative; }
+.timeline-row { display: grid; grid-template-columns: 110px 44px 1fr auto; gap: 28px; min-height: 142px; position: relative; align-items: start; }
 .timeline-row:not(:last-child)::after { content: ""; position: absolute; left: 131px; top: 42px; bottom: -2px; width: 1px; background: var(--border); }
 .timeline-time { display: flex; gap: 6px; align-items: baseline; padding-top: 5px; color: var(--primary); }
 .timeline-time strong { font: 700 25px var(--font-display); }
@@ -216,6 +216,9 @@
 .timeline-copy h3 { margin: 0 0 9px; font: 700 clamp(22px, 2.5vw, 32px)/1.1 var(--font-display); }
 .timeline-copy p { max-width: 790px; margin: 0; color: var(--muted-foreground); font-size: 15px; line-height: 1.65; }
 .timeline-feature .timeline-copy { background: var(--surface); border: 1px solid var(--border); border-left: 5px solid var(--gold); padding: 28px 32px 30px; margin-bottom: 40px; box-shadow: 0 18px 55px color-mix(in oklab, var(--primary) 8%, transparent); }
+.timeline-thumb { width: 96px; height: 96px; border-radius: 50%; overflow: hidden; border: 2px solid var(--gold); background: var(--surface); box-shadow: 0 14px 40px color-mix(in oklab, var(--primary) 12%, transparent); animation: photo-pop .7s cubic-bezier(.22,1,.36,1) both; animation-delay: .15s; }
+.timeline-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.timeline-feature .timeline-thumb { margin-top: 2px; }
 .session-label { display: inline-flex; gap: 7px; align-items: center; color: var(--primary); margin-bottom: 14px; font-size: 10px; text-transform: uppercase; font-weight: 700; letter-spacing: .12em; }
 .session-label svg { width: 14px; }
 
