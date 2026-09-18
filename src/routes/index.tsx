@@ -108,6 +108,11 @@ function EventAgenda() {
                 {item.feature && <span className="session-label"><Sparkles aria-hidden="true" /> Featured discussion</span>}
                 <h3>{item.title}</h3><p>{item.detail}</p>
               </div>
+              {item.photo && (
+                <div className="timeline-thumb" aria-hidden="true">
+                  <img src={item.photo} alt={item.photoAlt} />
+                </div>
+              )}
             </article>
           ))}
         </div>
