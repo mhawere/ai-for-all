@@ -8,6 +8,10 @@ import amraAsset from "@/assets/amra-sabic-elrayess.jpeg.asset.json";
 import andrewAsset from "@/assets/andrew-sollinger.jpeg.asset.json";
 import antonAsset from "@/assets/anton-leis-garcia.jpeg.asset.json";
 import treyAsset from "@/assets/trey-guinn.jpeg.asset.json";
+import royaAsset from "@/assets/roya-rahmani.jpeg.asset.json";
+import malalaAsset from "@/assets/malala-yousafzai.jpeg.asset.json";
+import moratinosAsset from "@/assets/miguel-angel-moratinos.jpeg.asset.json";
+import sarnaAsset from "@/assets/rabbi-yehuda-sarna.jpeg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -35,11 +39,15 @@ type Portrait = { name: string; role: string; src: string; position?: string };
 const portraits: Portrait[] = [
   { name: "H.E. Sheikh Dr. Mohammed Alissa", role: "Keynote speaker", src: alissaAsset.url, position: "object-top" },
   { name: "Dr. Trey Guinn", role: "Master of Ceremonies", src: treyAsset.url },
+  { name: "H.E. Miguel Ángel Moratinos", role: "Special remarks", src: moratinosAsset.url },
+  { name: "Rabbi Yehuda Sarna", role: "Panel I speaker", src: sarnaAsset.url },
   { name: "Dr. Jihad Turk", role: "Panel I speaker", src: jihadAsset.url },
   { name: "Andrew Sollinger", role: "Panel I moderator", src: andrewAsset.url },
+  { name: "Amb. Roya Rahmani", role: "Panel II speaker", src: royaAsset.url },
   { name: "Antón Leis García", role: "Panel II speaker", src: antonAsset.url },
   { name: "Laura Herman", role: "Panel II speaker", src: lauraAsset.url },
   { name: "Dr. Amra Sabic El-Rayess", role: "Panel II moderator", src: amraAsset.url },
+  { name: "Malala Yousafzai", role: "Closing remarks", src: malalaAsset.url },
 ];
 
 const agenda = [
@@ -118,7 +126,7 @@ function EventAgenda() {
             </figure>
           ))}
         </div>
-        <p className="portrait-note">Additional speaker portraits will be added as they become available.</p>
+        <p className="portrait-note">Additional speaker portraits can be added as they become available.</p>
       </section>
 
       <footer className="event-footer">
